@@ -1,8 +1,8 @@
-import unittest
+
 from unittest.mock import Mock
 from lib.task_list import TaskList
 
-class TestTaskList(unittest.TestCase):
+class TestTaskList:
     def setUp(self):
         self.task_list = TaskList()
 
@@ -44,5 +44,3 @@ class TestTaskList(unittest.TestCase):
 
         self.assertEqual(self.task_list.all(), [mock_task1, mock_task2])
 
-if __name__ == '__main__':
-    unittest.main()
