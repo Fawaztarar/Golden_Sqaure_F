@@ -1,10 +1,10 @@
-import unittest
+# import unittest
 from lib.music_library import MusicLibrary
 from lib.tracks import Track
 from unittest.mock import Mock
 
 
-class TestMusicLibrary(unittest.TestCase):
+class TestMusicLibrary:
     def setUp(self):
         self.library = MusicLibrary()
         self.track1 = Track("Bohemian Rhapsody", "Queen")
@@ -25,8 +25,8 @@ class TestMusicLibrary(unittest.TestCase):
         results = self.library.search("Beatles")
         self.assertEqual(results, [])
 
-if __name__ == '__main__':
-    unittest.main()
+# if __name__ == '__main__':
+#     unittest.main()
 
 
 #MOCKING
